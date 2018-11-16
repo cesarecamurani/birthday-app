@@ -4,7 +4,17 @@ require "capybara"
 class Birthday < Sinatra::Base
 
   get '/' do
-    erb :index
+    erb(:index)
   end
+
+  post '/datas' do
+
+  end
+
+  get '/message' do
+
+  end
+
+
 
 end
