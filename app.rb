@@ -1,7 +1,7 @@
 require "sinatra/base"
 require "capybara"
 
-class Birthday < Sinatra::Base
+class Birthday_app < Sinatra::Base
 
   enable :sessions
 
@@ -13,6 +13,7 @@ class Birthday < Sinatra::Base
     session[:name] = params[:name]
     session[:day] = params[:day]
     session[:month] = params[:month]
+    session[:year] = params[:year]
     redirect '/message'
   end
 
@@ -20,6 +21,7 @@ class Birthday < Sinatra::Base
     @name = session[:name]
     @day = session[:day]
     @month = session[:month]
+    @year = session[:year]
     erb :message
   end
 
