@@ -4,7 +4,7 @@ require "capybara"
 class Birthday < Sinatra::Base
 
   get '/' do
-    erb(:index)
+    erb :index
   end
 
 end
