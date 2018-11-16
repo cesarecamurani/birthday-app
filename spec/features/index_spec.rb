@@ -2,8 +2,8 @@
 feature 'index page' do
   scenario "User can enter his/her details" do
     visit "/"
-    page.select "3" , from: "days"
-    page.select "March" , from: "months"
+    page.select "3" , from: "day"
+    page.select "March" , from: "month"
     click_on "Let's go!"
   end
 end
